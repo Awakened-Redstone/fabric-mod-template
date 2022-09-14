@@ -4,7 +4,7 @@ org.gradle.jvmargs=-Xmx1G
 # Fabric Properties
 # check these on https://fabricmc.net/develop
 minecraft_version=${MINECRAFT_VERSION}
-yarn_mappings=${MAPPINGS_VERSION}
+yarn_mappings=${YARN_VERSION}
 loader_version=${LOADER_VERSION}
 
 # Mod Properties
@@ -13,4 +13,4 @@ maven_group = {MAVEN_GROUP}
 archives_base_name = {ARCHIVES_BASE_NAME}
 
 # Dependencies
-fabric_version={FAPI_VERSION}
+fabric_version={API_VERSION}

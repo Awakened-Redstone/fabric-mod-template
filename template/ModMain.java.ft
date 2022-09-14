@@ -1,4 +1,4 @@
-package net.fabricmc.example;
+package ${MAVEN_GROUP}.${ARTIFACT_ID};
 
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;

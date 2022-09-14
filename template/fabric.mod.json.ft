@@ -12,7 +12,7 @@
   },
 
   "license": "${LICENSE}",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/${MOD_ID}/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -27,7 +27,7 @@
   "depends": {
     "fabricloader": ">=${LOADER_VERSION}",
     #if(${API_VERSION})
-      "${API_MODID}": "*",
+      "${API_MOD_ID}": "*",
     #end
     "minecraft": "~${MINECRAFT_VERSION}"
   }
