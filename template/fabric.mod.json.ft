@@ -17,7 +17,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "${MAVEN_GROUP}.${ARTIFACT_ID}.${MAIN_CLASS}"
+      "${MAVEN_GROUP}.${ARCHIVES_BASE_NAME}.${MAIN_CLASS}"
     ]
   },
   "mixins": [
