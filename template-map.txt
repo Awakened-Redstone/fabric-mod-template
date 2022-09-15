@@ -5,7 +5,7 @@ build.gradle.ft -> build.gradle
 uses LOOM_VERSION, JAVA_VERSION
 
 gradle.properties.ft -> gradle.properties
-uses MC_VERSION, LOADER_VERSION, YARN_VERSION, API_VERSION, MAVEN_GROUP, ARCHIVES_BASE_NAME, MOD_VERSION
+uses MINECRAFT_VERSION, LOADER_VERSION, YARN_VERSION, API_VERSION, MAVEN_GROUP, ARCHIVES_BASE_NAME, MOD_VERSION
 
 gradle-wrapper.properties.ft -> gradle/wrapper/gradle-wrapper.properties
 uses GRADLE_VERSION
