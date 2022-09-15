@@ -15,7 +15,7 @@ uses API_MOD_ID, API_VERSION, MOD_ID, MAVEN_GROUP, ARTIFACT_ID, MAIN_CLASS, LOAD
 replaces "authors"
 
 mixins.json.ft -> ${resources_path}/${MOD_ID}.mixins.json
-uses MAVEN_GROUP, ARTIFACT_ID
+uses MAVEN_GROUP, ARTIFACT_ID, JAVA_VERSION
 
 ModMain.java.ft -> ${src_path}/${MAIN_CLASS}.java
 uses MAVEN_GROUP, ARTIFACT_ID, MOD_ID
