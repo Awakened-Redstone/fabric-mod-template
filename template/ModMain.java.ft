@@ -1,4 +1,4 @@
-package ${MAVEN_GROUP}.${ARTIFACT_ID};
+package ${MAVEN_GROUP}.${ARCHIVES_BASE_NAME};
 
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
