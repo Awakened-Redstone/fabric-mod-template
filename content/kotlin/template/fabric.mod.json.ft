@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "${MOD_ID}",
   "version": "${version}",
-
   "name": "${MOD_NAME}",
   "description": "${MOD_DESCRIPTION}",
   "authors": [],
@@ -10,25 +9,27 @@
     "homepage": "${HOMEPAGE}",
     "sources": "${SOURCES}"
   },
-
   "license": "${LICENSE}",
   "icon": "assets/${MOD_ID}/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
-      "${MAVEN_GROUP}.${ARCHIVES_BASE_NAME}.${MAIN_CLASS}"
+      {
+        "adapter": "kotlin",
+        "value": "${MAVEN_GROUP}.${ARCHIVES_BASE_NAME}.${MAIN_CLASS}"
+      }
     ]
   },
   "mixins": [
     "${MOD_ID}.mixins.json"
   ],
-
   "depends": {
     "fabricloader": ">=${LOADER_VERSION}",
+    "fabric-language-kotlin": ">=${FABRIC_KOTLIN_VERSION}+kotlin.${KOTLIN_VERSION}",
     #if(${API_VERSION})
       "${API_MOD_ID}": "*",
     #end
-    "minecraft": "~${MINECRAFT_VERSION}"
+    "minecraft": "~${MINECRAFT_VERSION}",
+    "java": ">=${JAVA_VERSION}"
   }
 }
