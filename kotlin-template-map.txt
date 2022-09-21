@@ -5,7 +5,7 @@ build.gradle.kts.ft -> build.gradle
 uses LOOM_VERSION, JAVA_VERSION
 
 gradle.properties.ft -> gradle.properties
-uses MINECRAFT_VERSION, LOADER_VERSION, YARN_VERSION, API_VERSION, MAVEN_GROUP, ARCHIVES_BASE_NAME, MOD_VERSION, KOTLIN_VERSION, FABRIC_KOTLIN_VERSION, KOTLIN_STYLE
+uses MINECRAFT_VERSION, LOADER_VERSION, YARN_VERSION, API_VERSION, MAVEN_GROUP, ARCHIVES_BASE_NAME, MOD_VERSION, KOTLIN_VERSION, FABRIC_KOTLIN_VERSION
 
 gradle-wrapper.properties.ft -> gradle/wrapper/gradle-wrapper.properties
 uses GRADLE_VERSION
@@ -17,7 +17,7 @@ replaces "authors"
 mixins.json.ft -> ${resources_path}/${MOD_ID}.mixins.json
 uses MAVEN_GROUP, ARCHIVES_BASE_NAME, JAVA_VERSION
 
-ModMain.kt.ft -> ${src_path}/${MAIN_CLASS}.java
+ModMain.kt.ft -> ${src_path}/${MAIN_CLASS}.kt
 uses MAVEN_GROUP, ARCHIVES_BASE_NAME, MOD_ID
 
 icon.png -> ${resources_path}/assets/${MOD_ID}/icon.png
