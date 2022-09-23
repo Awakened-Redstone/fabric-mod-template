@@ -1,0 +1,20 @@
+# Done to increase the memory available to gradle.
+org.gradle.jvmargs=-Xmx2G
+
+kotlin.code.style=official
+systemProp.kotlinVersion=${KOTLIN_VERSION}
+
+# Mod Properties
+modVersion = ${MOD_VERSION}
+mavenGroup = ${MAVEN_GROUP}
+archivesBaseName = ${ARCHIVES_BASE_NAME}
+
+# Fabric Properties
+# https://fabricmc.net/develop
+minecraftVersion=${MINECRAFT_VERSION}
+yarnVersion=${YARN_VERSION}
+loaderVersion=${LOADER_VERSION}
+fabricKotlinVersion=${FABRIC_KOTLIN_VERSION}
+
+# Dependencies
+fabricApiVersion=${API_VERSION}

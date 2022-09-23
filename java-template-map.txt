@@ -1,5 +1,5 @@
 src_path = src/main/java/${MAVEN_GROUP}.${ARCHIVES_BASE_NAME}
-resources_path = src/main/resources/${MAVEN_GROUP}.${ARCHIVES_BASE_NAME}
+resources_path = src/main/resources
 
 build.gradle.ft -> build.gradle
 uses LOOM_VERSION, JAVA_VERSION

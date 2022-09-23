@@ -1,0 +1,26 @@
+src_path = src/main/java/${MAVEN_GROUP}.${ARCHIVES_BASE_NAME}
+resources_path = src/main/resources
+
+build.gradle.kts.ft -> build.gradle
+uses LOOM_VERSION, JAVA_VERSION
+
+gradle.properties.ft -> gradle.properties
+uses MINECRAFT_VERSION, LOADER_VERSION, YARN_VERSION, API_VERSION, MAVEN_GROUP, ARCHIVES_BASE_NAME, MOD_VERSION, KOTLIN_VERSION, FABRIC_KOTLIN_VERSION
+
+gradle-wrapper.properties.ft -> gradle/wrapper/gradle-wrapper.properties
+uses GRADLE_VERSION
+
+fabric.mod.json.ft -> ${resources_path}/fabric.mod.json
+uses API_MOD_ID, API_VERSION, MOD_ID, MAVEN_GROUP, ARCHIVES_BASE_NAME, MAIN_CLASS, LOADER_VERSION, MINECRAFT_VERSION, MOD_DESCRIPTION, MOD_NAME, LICENSE, HOMEPAGE, SOURCES, KOTLIN_VERSION, FABRIC_KOTLIN_VERSION, JAVA_VERSION
+replaces "authors"
+
+mixins.json.ft -> ${resources_path}/${MOD_ID}.mixins.json
+uses MAVEN_GROUP, ARCHIVES_BASE_NAME, JAVA_VERSION
+
+ModMain.kt.ft -> ${src_path}/${MAIN_CLASS}.kt
+uses MAVEN_GROUP, ARCHIVES_BASE_NAME, MOD_ID
+
+icon.png -> ${resources_path}/assets/${MOD_ID}/icon.png
+
+generate LICENSE
+uses LICENSE_CONTENT

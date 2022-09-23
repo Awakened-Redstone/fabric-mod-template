@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "${MAVEN_GROUP}.${ARCHIVES_BASE_NAME}.mixin",
+  "compatibilityLevel": "JAVA_${JAVA_VERSION}",
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
