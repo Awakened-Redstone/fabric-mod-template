@@ -5,9 +5,9 @@ kotlin.code.style=official
 systemProp.kotlinVersion=${KOTLIN_VERSION}
 
 # Mod Properties
-mod_version = {MOD_VERSION}
-maven_group = {MAVEN_GROUP}
-archives_base_name = {ARCHIVES_BASE_NAME}
+mod_version = ${MOD_VERSION}
+maven_group = ${MAVEN_GROUP}
+archives_base_name = ${ARCHIVES_BASE_NAME}
 
 # Fabric Properties
 # https://fabricmc.net/develop
